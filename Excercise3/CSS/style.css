@@ -1,0 +1,152 @@
+html, body {
+    background-color: rgb(88, 109, 102);
+    margin: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.bajs {
+    visibility: hidden;
+    width: 8%;
+    padding: 20px;
+    min-width: 50px;
+}
+h1 {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+@keyframes example {
+    0% {color: wheat;}
+    50% {color: chocolate;}
+    100% {color: wheat;}
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    background-color: rgb(88, 109, 102);
+    height: auto;
+}
+
+ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0%;
+    justify-content: space-around;
+    text-decoration: none;
+
+}
+
+li {
+    color: white;
+list-style-type: none;
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+header {
+    color: white;
+    background-color: rgb(88, 109, 102);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    outline: 2px solid wheat;
+ 
+
+}
+
+main {
+    background-color: orange;
+    height: auto;  
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+p {
+    padding: 10px;
+}
+
+aside {
+    background-color: rgb(88, 109, 102);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+button:hover {
+cursor: pointer;
+
+}
+
+.logo {
+    width: 8%;
+    padding: 20px;
+    min-width: 50px;
+
+  }
+  
+  
+
+ footer {
+    background-color: rgb(88, 109, 102);
+ }
+
+footer p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        flex-direction: row;
+    } 
+    section {
+        height: 100vh;
+        width: 20%;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-left: 10px;
+    }
+
+    li {
+        padding: 5px;
+    }
+    
+    main {
+        height: auto;
+        width: 60%;
+    }
+    
+    
+    aside {
+        height: 100vh;
+        width: 20%;
+    }
+
+}
